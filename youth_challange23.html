@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Botanical Battery</title>
+ <style>
+  body {
+   font-family: Arial, sans-serif;
+   background-color: #e3e3cb;
+   color: #333;
+  }
+
+  header {
+   background-color: #7ca264;
+   padding: 1em;
+   color: #fff;
+  }
+
+  header img {
+   height: 80px;
+   width: 80px;
+   border-radius: 50%;
+   object-fit: cover;
+   margin-right: 0.5em;
+  }
+
+  nav {
+   background-color: #333;
+   color: #fff;
+   padding: 0.5em;
+  }
+
+  nav ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+  }
+
+  nav li {
+   padding: 0.5em;
+  }
+
+  nav a {
+   color: #fff;
+   text-decoration: none;
+   font-weight: bold;
+  }
+
+  main {
+   margin: 1em;
+  }
+
+  section {
+   background-color: #fff;
+   padding: 1em;
+   margin-bottom: 1em;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+   border-radius: 3px;
+  }
+
+  h2 {
+   color: #7ca264;
+   border-bottom: 2px solid #7ca264;
+   padding-bottom: 0.5em;
+   font-size: 1.2em;
+   margin-bottom: 0.5em;
+  }
+
+  ul {
+   margin-bottom: 1em;
+   font-size: 0.9em;
+  }
+
+  li {
+   margin-bottom: 0.5em;
+  }
+
+  footer {
+   background-color: #333;
+   color: #fff;
+   padding: 1em;
+   text-align: center;
+   font-size: 0.8em;
+  }
+
+  footer p {
+   margin: 0;
+  }
+
+  .hidden {
+   display: none;
+  }
+
+  /* Updated CSS styles for product images */
+  #products-details img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin-bottom: 0.5em;
+    border: 2px solid #7ca264;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+#home img {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    argin-right: 1em;
+    border: 2px solid #7ca264;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+ </style>
+ <script>
+  function toggle(id) {
+   const element = document.getElementById(id);
+   element.classList.toggle('hidden');
+  }
+ </script>
+</head>
+<body>
+ <header>
+  <img src="https://i.postimg.cc/xTBDbptS/photo-2023-07-24-22-24-56.jpg">
+  <h1>Botanical Battery</h1>
+ </header>
+ 
+ <nav>
+  <ul>
+   <li><a href="#home">Home</a></li>
+   <li><a href="#about" onclick="toggle('about-details'); return false;">About Us</a></li>
+   <li><a href="#technology" onclick="toggle('technology-details'); return false;">Our Technology</a></li>
+   <li><a href="#products" onclick="toggle('products-details'); return false;">Products</a></li>
+   <li><a href="#contact" onclick="toggle('contact-details'); return false;">Contact Us</a></li>
+  </ul>
+ </nav>
+ 
+ <main>
+  <section id="home">
+   <h2>Welcome to Botanical Battery</h2>
+<img src="https://i.postimg.cc/zBsYMxGm/01e79752-f677-407e-b293-016542c0ae44-Picture14.png" alt="Join the green revolution and switch to plant-based electricity.">
+   <h3>The future is green, and so is our electricity!!!</h3>
+  </section>
+  
+  <section id="about-details" class="hidden">
+   <h2>About Us</h2>
+   <p>Botanical Battery is a company that specializes in developing innovative technologies for sustainable energy production and storage.</p>
+  </section>
+  
+  <section id="technology-details" class="hidden">
+   <h2>Our Technology</h2>
+   <p>Our patented Plant Microbial Fuel Cell (PMFC) technology uses Spider plant to generate electricity through the natural metabolic processes of microorganisms in the soil around the plant roots. Our PMFCs are efficient, scalable, and environmentally friendly, and can be used in a variety of applications, from powering small devices to providing backup power for homes and businesses.</p>
+  </section>
+  
+  <section id="products-details" class="hidden">
+   <h2>Our Products</h2>
+   <ul>
+    <li>
+      <img src="https://i.postimg.cc/BbTfGJd4/photo-2023-07-25-21-58-40.jpg" alt="Botanical Battery for Small Devices">
+      <h3>Botanical Battery for Small Devices</h3>
+    </li>
+    <li>
+      <img src="https://i.postimg.cc/0jQDTN6J/photo-2023-07-25-22-02-30.jpg" alt="Botanical Battery for HomeUse">
+      <h3>Botanical Battery for HomeUse</h3>
+    </li>
+    <li>
+      <img src="https://i.postimg.cc/zDtnnTMw/photo-2023-07-25-21-58-40-2.jpg" alt="Botanical Battery for Business Use">
+      <h3>Botanical Battery for Business Use</h3>
+    </li>
+   </ul>
+   <p>Our Botanical Batteries come in different sizes and capacities to meet your energy needs. They are easy to use and maintain, and are designed to last longer and perform better than traditional batteries.</p>
+  </section>
+  
+  <section id="contact-details" class="hidden">
+   <h2>Contact Us</h2>
+   <p>Botanical Battery<br>
+   Email: info@botanicalbattery.com</p>
+  <h3>Feedback and Suggestions</h3>
+   <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea><br>
+
+    <input type="submit" value="Submit">
+   </form>
+  </section>
+ </main>
+ 
+ <footer>
+  <p>&copy; 2023 Botanical Battery</p>
+ </footer>
+</body>
+</html>
